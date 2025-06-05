@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f7ecde;
+  font-family: ptsans-caption;
+}
+hr {
+    font-weight: 900;
+    border-top: 2px dotted black;
+}
+
+header {
+  h1{
+    color: #352e28;
+    font-family: pacifico;
+    font-weight: 500;
+    font-size: 3.125rem;
+    line-height: 3.75rem;
+    position: relative;
+  }
+  h1::before {
+    content: "";
+    width: 100%;
+    height: 25%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #fec260;
+    position: absolute;
+    transition: height 500ms;
+  }
+  h1:hover::before {
+        height: 65%;
+  }
+}
+#inputArea {
+    h2 {
+        font-family: righteous;
+        font-size: 1.5625rem;
+        line-height: 1.875rem;
+        font-weight: 500;
+        background: linear-gradient(to right ,#197e35, #e6d814);
+        color: transparent;
+        background-clip: text;
+    }
+    #input {
+        label {
+            font-weight: 600;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+#display {
+    #heads {
+        span {
+            margin: 0.5rem 0;
+            font-weight: 700;
+        }
+    }
+}

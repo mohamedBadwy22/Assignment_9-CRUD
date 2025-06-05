@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "pacifico";
+  src: url(../fonts/Pacifico-Regular.woff) format("woff"),
+    url(../fonts/Pacifico-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "righteous";
+  src: url(../fonts/Righteous-Regular.woff) format("woff"),
+    url(../fonts/Righteous-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "ptsans-caption";
+  src: url(../fonts/PTSans-Caption.woff) format("woff"),
+    url(../fonts/PTSans-Caption.woff2) format("woff2");
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmark</title>
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/font-family.css" />
+    <link rel="stylesheet" href="CSS/main.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header class="text-center">
+          <h1 class="d-inline-block my-5">Bookmarker</h1>
+        </header>
+        <hr />
+        <section id="inputArea" class="d-flex flex-column">
+          <h2 class="text-center mb-3">
+            <i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites
+            <i class="fa-solid fa-bookmark"></i>
+          </h2>
+          <div id="input">
+            <label for="siteName"
+              ><i class="fa-solid fa-book-bookmark"></i> Site Name </label
+            >
+            <input
+              type="text"
+              class="mb-4 form-control"
+              id="siteName"
+              placeholder="Bookmark Name"
+            />
+            <label for="url"><i class="fa-solid fa-link"></i> Site URL </label>
+            <input
+              type="url"
+              class="mb-4 form-control"
+              id="url"
+              placeholder="Website URL"
+            />
+          </div>
+          <button type="button" class="btn btn-danger px-5 align-self-center">Submit</button>
+        </section>
+        <hr />
+        <section id="display" class="bg-white">
+          <div id="heads" class="d-flex justify-content-around">
+            <span>Index</span>
+            <span>Website Name</span>
+            <span>Visit</span>
+            <span>Delete</span>
+          </div>
+          
+        </section>
+      </div>
+    </main>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
