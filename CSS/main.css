@@ -55,10 +55,40 @@ header {
     }
 }
 #display {
-    #heads {
-        span {
-            margin: 0.5rem 0;
-            font-weight: 700;
-        }
+  span {
+    margin: 0.5rem 0;
+    font-weight: 700;
+  }
+  table {
+    th,td {
+    border-bottom: .0625rem solid rgba(0, 0, 0, 0.223);
     }
+    .visitBtn {
+      background-color: #9EB23B;
+      transition: border 500ms , background-color 500ms;
+    }
+    .visitBtn:hover {
+      border: .0625rem solid black;
+      background-color: #8A9E23;
+    }
+  }
+
+}
+
+
+#layout {
+  background-color: rgba(0, 0, 0, 0.503);
+  #errorMessage {
+  width: 30%;
+  p {
+    font-family: fantasy;
+    font-size: 1.3125rem;
+  }
+  ul {
+    font-size: 1.125rem;
+    li {
+      padding: 0.5rem 0.25rem;
+    }
+  }
+}
 }

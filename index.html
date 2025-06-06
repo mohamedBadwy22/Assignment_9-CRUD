@@ -22,10 +22,9 @@
             <i class="fa-solid fa-bookmark"></i>
           </h2>
           <div id="input">
-            <label for="siteName"
-              ><i class="fa-solid fa-book-bookmark"></i> Site Name </label
-            >
+            <label for="siteName"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
             <input
+              oninput="validationInputs(this)"
               type="text"
               class="mb-4 form-control"
               id="siteName"
@@ -33,24 +32,46 @@
             />
             <label for="url"><i class="fa-solid fa-link"></i> Site URL </label>
             <input
+              oninput="validationInputs(this)"
               type="url"
               class="mb-4 form-control"
               id="url"
               placeholder="Website URL"
             />
           </div>
-          <button type="button" class="btn btn-danger px-5 align-self-center">Submit</button>
+          <button id="submitBtn" type="button" class="btn btn-danger px-5 align-self-center">
+            Submit
+          </button>
         </section>
         <hr />
         <section id="display" class="bg-white">
-          <div id="heads" class="d-flex justify-content-around">
-            <span>Index</span>
-            <span>Website Name</span>
-            <span>Visit</span>
-            <span>Delete</span>
-          </div>
-          
+          <table class="table-light w-100 text-center my-2">
+            <thead>
+              <th class="py-1"><span>Index</span></th>
+              <th class="py-1"><span>Website Name</span></th>
+              <th class="py-1"><span>Visit</span></th>
+              <th class="py-1"><span>Delete</span></th>
+            </thead>
+            <tbody id="itemContainer"></tbody>
+          </table>
         </section>
+      </div>
+      <div id="layout" class="position-fixed top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center d-none">
+      <div id="errorMessage" class="bg-white py-4 px-3 rounded-2">
+        <div class="icons d-flex justify-content-between mb-4">
+          <div class="color-circles">
+            <i class="fa-solid p-1 fa-lg fa-circle text-danger"></i>
+            <i class="fa-solid p-1 fa-lg fa-circle text-warning"></i>
+            <i class="fa-solid p-1 fa-lg fa-circle text-success"></i>
+          </div> 
+          <i class="fa-solid fa-xl fa-xmark align-self-center" onClick="closeTab()"></i>
+        </div>
+        <p>Site Name or Url is not valid, Please follow the rules below :</p>
+        <ul class="listContainer list-unstyled">
+          <li><i class="fa-regular fa-circle-right text-danger"></i> Site name must contain at least 3 characters</li>
+          <li><i class="fa-regular fa-circle-right text-danger"></i> Site URL must be a valid one</li>
+        </ul>
+      </div>
       </div>
     </main>
 
